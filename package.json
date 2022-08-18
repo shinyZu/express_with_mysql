@@ -1,0 +1,14 @@
+{
+  "name": "express-with-mysql",
+  "version": "1.0.0",
+  "description": "Assignment_01 - Express JS backend with MySQL database integration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shinyZu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
