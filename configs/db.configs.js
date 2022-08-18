@@ -63,7 +63,7 @@ connection.connect((err) => {
 
     // Create OrderDetail Table
     var query_orderDetailTable =
-      "CREATE TABLE IF NOT EXISTS order_detail (order_id VARCHAR(255), item_code VARCHAR(255), order_qty INT, CONSTRAINT PRIMARY KEY (order_id, item_code), CONSTRAINT FOREIGN KEY (item_code) REFERENCES item(item_code) ON DELETE CASCADE ON UPDATE CASCADE)";
+      "CREATE TABLE IF NOT EXISTS order_detail (order_id VARCHAR(255), item_code VARCHAR(255), order_qty INT, CONSTRAINT PRIMARY KEY (order_id, item_code), CONSTRAINT FOREIGN KEY (order_id) REFERENCES orders(order_id), CONSTRAINT FOREIGN KEY (item_code) REFERENCES item(item_code) ON DELETE CASCADE ON UPDATE CASCADE)";
 
     connection.query(query_orderDetailTable, (err, result) => {
       if (err) throw err;
