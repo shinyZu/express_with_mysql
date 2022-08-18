@@ -39,7 +39,7 @@ connection.connect((err) => {
 
     // Create Item Table
     var query_itemTable =
-      "CREATE TABLE IF NOT EXISTS item (item_code VARCHAR(255) PRIMARY KEY, description VARCHAR(255), unit_price DOUBLE, qty INT)";
+      "CREATE TABLE IF NOT EXISTS item (item_code VARCHAR(255) PRIMARY KEY, description VARCHAR(255), unit_price DOUBLE, qtyOnHand INT)";
 
     connection.query(query_itemTable, (err, result) => {
       if (err) throw err;
