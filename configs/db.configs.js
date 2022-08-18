@@ -1,12 +1,3 @@
-// module.exports = {
-//   database: {
-//     host: "localhost",
-//     user: "root",
-//     password: "shiny1234",
-//     database: "express_mysql",
-//   },
-// };
-
 //------- Creating MySQL Database Connection ------------
 
 const mysql = require("mysql");
@@ -76,4 +67,3 @@ connection.connect((err) => {
 });
 
 module.exports = connection;
-//-------------------------------------------------------
