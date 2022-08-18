@@ -51,7 +51,7 @@ connection.connect((err) => {
 
     // Create Orders Table
     var query_orderTable =
-      "CREATE TABLE IF NOT EXISTS orders (order_id VARCHAR(255) PRIMARY KEY, order_date VARCHAR(255), order_cost DATE, customer_id VARCHAR(255), CONSTRAINT FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE ON UPDATE CASCADE)";
+      "CREATE TABLE IF NOT EXISTS orders (order_id VARCHAR(255) PRIMARY KEY, order_date VARCHAR(255), order_cost DOUBLE, customer_id VARCHAR(255), CONSTRAINT FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE ON UPDATE CASCADE)";
 
     connection.query(query_orderTable, (err, result) => {
       if (err) throw err;
