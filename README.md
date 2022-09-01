@@ -8,8 +8,9 @@
 
 <br>
 
-## Used :
+## Technology Stack :
 
+- Node JS
 - Express JS
 - MySQL
 - Postman
